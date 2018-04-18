@@ -1,0 +1,263 @@
+@import url("https://use.typekit.net/nky3vln.css");
+
+* {
+  box-sizing: border-box;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+body {
+  font-family: 'Montserrat', 'Mr Eaves Sans', Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-family: "Mr Eaves Sans";
+}
+
+.container-outside {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.menu {
+  width: 40px;
+  height: 1px;
+  background-color: black;
+  margin: 12px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 5px; 
+  padding: 40px; 
+  margin-bottom: 20px;
+}
+
+.box--grey {
+  background-color: #DCD5D0;
+  min-height: 596px;
+  padding-left: 390px;
+  padding: 200px;
+  margin-bottom: 30px;
+}
+
+.box--grey--text {
+  text-align: left;
+  font-size: 46px;
+  color: white;
+  font-family: 'Bree Serif' serif;
+}
+
+.box--red {
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  height: 400px;
+  padding: 50px;
+  margin-bottom: 50px;
+  margin-top: 5opx;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: auto;
+  color: white;
+}
+
+.button{
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  padding: 14px;
+  margin-top: 3rem;
+  background: transparent;
+  border-radius: 30px;
+  border: 1px solid black;
+  color: black;
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: transform 0.4s;
+}
+
+.button:hover {
+  background: black;
+  color: #DCD5D0;
+  box-shadow: 1px 1px 20px 0.3px rgba(0, 0, 0, 0.2);
+  transform:  scale(1.2)
+  }
+
+.box--center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.box--featured {
+  width: 110px;
+  padding: 14px;
+  margin-top: 20px;
+  background-color: black;
+  border-radius: 30px;
+  color: white;
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: transform 0.4s;
+}
+
+.box--featured:hover {
+  background: tomato;
+  box-shadow: 1px 1px 20px 0.3px rgba(0, 0, 0, 0.2);
+  transform:  scale(1.2)
+}
+
+.box--white {
+  display: flex;
+  height: 400px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  background-color: white;
+  text-align: center;
+}
+
+.box--black {
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.featured--text {
+  width: 600px;
+  position: relative;
+  top: 60px;
+  left: 60px;
+  background: transparent;
+  text-align: left;
+}
+
+.featured--img {
+  width: 1200px;
+  height: 400px;
+  background-image: url(https://images.unsplash.com/photo-1444710847231-6e5794335ceb?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=f65ad2f882963fca7c61b0a60034f604);
+  background-size: cover;
+}
+
+.box--row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.teaser {
+  align-self: flex-start;
+  width: 250px;
+  margin: 20px;
+  background-color: white;
+}
+
+.teaser--header {
+  height: 200px;
+  background-image:url(https://images.unsplash.com/photo-1444710847231-6e5794335ceb?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=f65ad2f882963fca7c61b0a60034f604);
+  background-size: cover;
+  filter: grayscale(100);
+}
+
+.teaser--header:hover {
+  filter: none;
+}
+
+.teaser--number {
+  position: relative;
+  top: -30px;
+  left: 20px;
+  background: transparent;
+  text-align: left;
+  font-size: 2.5rem;
+  color: black;
+  font-weight: 500;
+}
+
+.teaser--text {
+  width: 150px;
+  position: relative;
+  top: -60px;
+  left: 80px;
+  background: transparent;
+  text-align: left;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  color: grey;
+}
+
+.box--contact {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #DCD5D0;
+  min-height: 400px;
+  padding: 50px;
+}
+
+
+/* Animation */
+.hamburger {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60px;
+  height: 30px;
+  cursor: pointer;
+}
+.hamburger div {
+  align-self: flex-end;
+  height: 2px;
+  width: 100%;
+  background: black;
+}
+.hamburger .meat {
+  width: 75%;
+  transition: all 200ms ease-in-out;
+}
+.hamburger .bottom-bun {
+  width: 50%;
+  transition: all 400ms ease-in-out;
+}
+.hamburger:hover div {
+  width: 100%;
+}
+.hamburger:hover .top-bun {
+          animation: burger-hover 1s infinite ease-in-out alternate;
+          background-color: tomato;
+}
+.hamburger:hover .meat {
+          animation: burger-hover 1s infinite ease-in-out alternate forwards 200ms;
+          background-color: tomato;
+}
+.hamburger:hover .bottom-bun {
+          animation: burger-hover 1s infinite ease-in-out alternate forwards 400ms;
+          background-color: tomato;
+}
+
+@keyframes burger-hover {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
